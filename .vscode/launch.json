@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ArraysDouble",
+            "request": "launch",
+            "mainClass": "ArraysDouble",
+            "projectName": "programmers_5ec2a1ed"
+        },
+        {
+            "type": "java",
+            "name": "AdditionOfFraction",
+            "request": "launch",
+            "mainClass": "AdditionOfFraction",
+            "projectName": "programmers_5ec2a1ed"
+        },
+        {
+            "type": "java",
+            "name": "Sum",
+            "request": "launch",
+            "mainClass": "Sum",
+            "projectName": "programmers_5ec2a1ed"
+        },
+        {
+            "type": "java",
+            "name": "Division",
+            "request": "launch",
+            "mainClass": "Division",
+            "projectName": "programmers_5ec2a1ed"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
