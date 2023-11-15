@@ -20,17 +20,7 @@ class DiagnosisSequence {
     public static int[] solution(int[] emergency) {
         int[] answer = {};
 
-        for(int i = 0; i < emergency.length; i++){
-            for(int j = 1; j <= emergency.length-1; j++){
-                if(emergency[j] > emergency[j]-1){
-                    emergency[j-1] = emergency[j];
-                    emergency[j] = emergency[j-1];
-                }
-            }
-        }
-        answer = emergency;
-            
-
+       
         return answer;
     }
 }
