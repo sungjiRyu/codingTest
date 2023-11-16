@@ -29,10 +29,10 @@ public class Morsecode {
         String[] ArrayLetter = letter.split(" ");
 
         for (String word : ArrayLetter){
-            int i = 0;
-            i ++;
+            for(int i = 0; i < morse.length; i++){
             if(word.equals(morse[i])){
             answer += Character.toString(i+'a');        
+            }
             }
         }
         
