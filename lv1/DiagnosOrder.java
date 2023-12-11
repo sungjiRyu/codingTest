@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class DiagnosOrder {
    
-    public int[] solution(int[] emergency) {
+    public int[] solution1(int[] emergency) {
     	// asc라는 배열을 새로 선언해서 새로운 메모리 공간을 확보하고
         int[] asc = new int[emergency.length];
         int[] answer = new int[emergency.length];
@@ -14,6 +14,8 @@ public class DiagnosOrder {
         
         Arrays.sort(asc);
         
+
+
         for(int i=0; i<=emergency.length-1; i++) {
             for(int j=0; j<=emergency.length-1; j++) {
                 if(asc[i]==emergency[j]) {
@@ -23,4 +25,9 @@ public class DiagnosOrder {
         }
         return answer;
     }
+
+
+
+
+
 }
