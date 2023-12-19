@@ -8,16 +8,17 @@ public class DidntFinishPlayer {
     public String solution(String[] participant, String[] completion) {
         // completion의 길이는 participant의 길이보다 1 작습니다.
         // 완주하지 못한 선수의 이름을 return
-        String answer = "";
-        
+        String answer = "null";
         
         Arrays.sort(participant);
         Arrays.sort(completion);
-        
-        for(int i = 0; i < participant.length; i++ ){
+      
+        int i = 0;
+        for(; i < completion.length; i++ ){
             if(!participant[i].equals(completion[i]))
-            return answer = participant[i];
+            break;
         }
+        answer = participant[i];
         
         return answer;
     }
@@ -25,10 +26,11 @@ public class DidntFinishPlayer {
     public static void main(String[] args) {
         DidntFinishPlayer sol = new DidntFinishPlayer();
         
-        String[] participant = {"leo","kiki","edan","kiki"};
+        String[] participant = {"leo","edan","kiki","james"};
         String[] completion = {"leo","edan","kiki"};
     
         System.out.println(sol.solution(participant, completion));
+
     }
 }
 
