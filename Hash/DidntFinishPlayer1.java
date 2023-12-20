@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.HashMap;
 
 // 프로그래머스 LV1 완주하지 못한 선수
