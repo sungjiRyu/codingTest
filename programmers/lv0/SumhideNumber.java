@@ -6,7 +6,6 @@ public class SumhideNumber {
         int i = 0;
 
         String[] arr = my_string.replaceAll("[^0-9]", "").split("");
-
         for(String str : arr) {
             answer += Integer.parseInt(arr[i]);
             i++;
