@@ -1,3 +1,8 @@
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
 public class SumOfDivisors {
     // 약수의 합
     // 2024-05-22
