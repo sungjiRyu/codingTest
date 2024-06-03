@@ -19,7 +19,5 @@ public class CollatzConjecture {
     // test case 중 626331의 값은 -1이 나와야 하지만 실행해보니 488이 나왔음
     // -> 연산과정에서 num의 값이 21억을 넘어가기때문에 overflow가 나서 계산이 뒤틀리는거였음.
     // -> int num => long num 으로 바꿔서 해결
-    public static void main(String[] args) {
-        System.out.println(solution(626331));
-    }
+
 }
