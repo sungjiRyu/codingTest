@@ -18,7 +18,6 @@ public class ReverseTernary {
 
         }
 
-
         return answer;
     }
     // 알게된 사실
