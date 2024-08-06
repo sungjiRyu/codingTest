@@ -5,10 +5,6 @@ import java.util.List;
 public class FoodFighter {
     // 2024-08-06
     // 푸드 파이트 대회
-    public static void main(String[] args) {
-        int[] food = {1, 3, 4, 6};
-        System.out.println("solution(food) = " + solution(food));
-    }
     public String solution(int[] food) {
         int q = 0;
         StringBuilder answer = new StringBuilder();
