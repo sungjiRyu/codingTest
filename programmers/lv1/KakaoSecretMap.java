@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class KakaoSecretMap {
     // 2024-08-28
     // 비밀지도
-
     public static String[] solution(int n, int[] arr1, int[] arr2) {
         String[] answer  = new String[n];
         String[] arr1Str = new String[n];
@@ -49,6 +48,22 @@ public class KakaoSecretMap {
         }
 
         return String.valueOf(binary).substring(1);
+    }
+
+    // 다른사람의 풀이
+    public static String[] solution2(int n, int[] arr1, int[] arr2) {
+        String[] answer  = new String[n];
+        String binaryString = "";
+
+        for (int i = 0; i < n; i++) {
+            binaryString = Integer.toBinaryString(arr1[i] | arr2[i]);
+            answer[i] = String.format("%" + n + "s", binaryString);
+
+            answer[i] = answer[i].replace("0"," ");
+            answer[i] = answer[i].replace("1","#");
+        }
+
+        return answer;
     }
 }
 
